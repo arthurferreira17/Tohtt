@@ -1,5 +1,169 @@
-Body
-{
-	margin-left: 20px;
+/*Import googlet*/
 
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+
+/*Variáveis*/
+
+ :root {
+    --dark-color: #2d2c2d;
+    --purple-solid: #0ea5b0;
+    --purple-transparent: #a60fba79(53, 10, 79, 0.702);
+    --purple-transparent-alt: rgba(15, 146, 186, 0.514);
+    --purple-light: #15A39E;
+    --yellow-solid: #cf29f0;
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
+    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+}
+
+
+/*Corpo do HTML*/
+
+Body {
+    margin-left: 0px;
+    background-image: url(C:/Users/Berse/Desktop/[TCC]/tcc/img/placeholder.gif);
+    background-color: darkturquoise;
+    position: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+    color: darkviolet;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 0px;
+    background: #084D6E;
+    font-family: 'Arial';
+    position: auto;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 25%;
+    float: left;
+}
+
+.menu {
+    width: 101%;
+    height: 5%;
+    background: #084D6E;
+    font-family: 'Arial';
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 16.6%;
+    float: left;
+}
+
+.menu a {
+    background: #084D6E;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.menu a:hover {
+    background-color: #4FA7D5;
+    color: white;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul ul:hover ul {
+    visibility: visible;
+}
+
+.menu ul ul ul {
+    float: none;
+    border-bottom: solid 1px silver;
+}
+
+.menu ul ul ul a {
+    background-color: #4FA7D5;
+    color: black;
+}
+
+label[for="bt_menu"] {
+    padding: 5px;
+    background-color: #084D6E;
+    color: #fff;
+    font-family: "Arial, Helvetica, sans-serif";
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for="bt_menu"] {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    label[for="bt_menu"] {
+        display: block;
+    }
+    .menu {
+        margin-top: 5px;
+        margin-left: -101%;
+        transition: all .4s;
+    }
+    #bt_menu:checked~.menu {
+        margin-left: 0%;
+        transition: all .2s;
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+}
+
+.menuburgue {
+    font-size: 3rem;
+    margin-left: .2rem;
+    margin-right: 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }

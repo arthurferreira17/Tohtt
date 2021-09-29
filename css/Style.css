@@ -4,15 +4,23 @@
 
 /*Variáveis*/
 
- :root {
-    --dark-color: #2d2c2d;
-    --purple-solid: #0ea5b0;
-    --purple-transparent: #a60fba79(53, 10, 79, 0.702);
+:root {
+    --dark-color: #2d2c2c;
+    --purple-solid: #0E60B0;
+    --purple-transparent: #0f92ba79(53, 10, 79, 0.702);
     --purple-transparent-alt: rgba(15, 146, 186, 0.514);
     --purple-light: #15A39E;
-    --yellow-solid: #cf29f0;
+    --yellow-solid: #F07329;
     --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
     --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -20,8 +28,7 @@
 
 Body {
     margin-left: 0px;
-    background-image: url(C:/Users/Berse/Desktop/[TCC]/tcc/img/placeholder.gif);
-    background-color: darkturquoise;
+    background: linear-gradient(116.82deg, rgba(90, 224, 144, 0.944606) 0%, rgba(117, 207, 236, 0.944606) 100%);
     position: auto;
     background-position: center;
     background-attachment: fixed;
@@ -34,9 +41,12 @@ a {
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 110%;
-    color: darkviolet;
+    font-size: 24px;
+    font-display: justify;
 }
+
+
+/* menu gamer */
 
 * {
     margin: 0;
@@ -62,8 +72,8 @@ h1 {
 }
 
 .menu {
-    width: 101%;
-    height: 5%;
+    width: 100%;
+    height: 3.65rem;
     background: #084D6E;
     font-family: 'Arial';
 }
@@ -74,7 +84,7 @@ h1 {
 }
 
 .menu ul li {
-    width: 16.6%;
+    width: auto;
     float: left;
 }
 
@@ -97,18 +107,20 @@ h1 {
     visibility: hidden;
 }
 
-.menu ul ul:hover ul {
+.menu ul li:hover ul {
     visibility: visible;
+    color: white;
 }
 
-.menu ul ul ul {
+.menu ul ul li {
     float: none;
-    border-bottom: solid 1px silver;
+    border-bottom: solid 1px #033985;
+    width: auto;
 }
 
-.menu ul ul ul a {
-    background-color: #4FA7D5;
-    color: black;
+.menu ul ul li a {
+    background-color: #084D6E;
+    color: white;
 }
 
 label[for="bt_menu"] {
@@ -161,9 +173,110 @@ label[for="bt_menu"] {
 }
 
 .menuburgue {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: .2rem;
     margin-right: 0.5rem;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    position: center;
+}
+
+.form {
+    width: 10%;
+    background-image: var(--gradient-color);
+    padding: 2.5rem;
+}
+
+.caixa {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.caixa-forma {
+    position: center;
+    width: 15rem;
+    height: 11rem;
+    background: #084D6E;
+    border-radius: 22px;
+}
+
+.caixa-forma2 {
+    position: center;
+    width: 25rem;
+    height: 15rem;
+    background: #084D6E;
+    border-radius: 22px;
+}
+
+.caixa-forma3 {
+    position: center;
+    width: 25rem;
+    height: 25rem;
+    background: #084D6E;
+    border-radius: 22px;
+}
+
+.inputlbl {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 0rem;
+}
+
+.input {
+    outline: #033985;
+    border-radius: 12px;
+    width: 80%;
+    min-height: 2rem;
+    padding: .56rem;
+    font-weight: bold;
+    color: #a5a5a5;
+    letter-spacing: 5px;
+    font: "Open Sans", sans-serif;
+    resize: none;
+    display: inline-flex;
+    margin-right: auto;
+}
+
+
+/* Botões */
+
+.btn {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .5rem 3.5rem;
+    border: none;
+    border-radius: 10rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-forma {
+    background-color: #033985;
+}
+
+.btn-forma:hover {
+    background-color: #4FA7D5;
 }

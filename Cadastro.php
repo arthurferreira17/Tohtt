@@ -34,20 +34,38 @@
         </header>
         <section class="container">
             <center>
-                <div class="caixa-forma">
+                <div class="caixa-forma3">
                     <div class="caixa">
                         <forms action="#" class="forms">
                             <div class="conteudo">
-                                <label for="user" class="inputlbl">Nova senha</label>
-                                <input type="password" class="input " id="user" placeholder="...">
+                                <label for="user" class="inputlbl">Nome</label>
+                                <input type="text" class="input " id="user" placeholder="...">
                             </div>
                             <div class="conteudo">
-                                <label for="senha" class="inputlbl">Confirmar senha</label>
+                                <label for="senha" class="inputlbl">Nome de usuário</label>
+                                <input type="text" class="input " id="senha" placeholder="...">
+                            </div>
+                            <div class="conteudo">
+                                <label for="senha" class="inputlbl">E-mail</label>
+                                <input type="e-mail" class="input " id="senha" placeholder="...">
+                            </div>
+                            <div class="conteudo">
+                                <label for="senha" class="inputlbl">Data de nascimento</label>
+                                <input type="date" class="input " id="senha" placeholder="...">
+                            </div>
+                            <div class="conteudo">
+                                <label for="senha" class="inputlbl">Senha</label>
+                                <input type="password" class="input " id="senha" placeholder="...">
+                            </div>
+                            <div class="conteudo">
+                                <label for="senha" class="inputlbl">Confirme a sua senha</label>
                                 <input type="password" class="input " id="senha" placeholder="...">
                             </div>
                             <br>
-                            <a href="Index.html" class="btn btn-forma">Continuar</a>
+                            <p></p>
+                            <a href="#" class="btn btn-forma">Cadastrar</a>
                             <br>
+
                         </forms>
                     </div>
                 </div>
@@ -56,30 +74,7 @@
         </div>
         <!-- FOOTER AQUI SE ENCONTRA O FOOTER DO SITE + REDES SOCIAIS + CONTATO + COPYRIGHT -->
         <footer>
-            <div class="footer-container">
-                <div class="footer">
-                    <div class="footer-heading footer-1">
-                        <h2>Nossas redes sociais</h2>
-                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-                        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                        <a href="#"><i class="fab fa-discord"></i> Discord</a>
-                        <a href="#"><i class="fab fa-reddit"></i> Reddit</a>
-                    </div>
-                    <div class="footer-heading footer-2">
-                        <h2>Sobre nós</h2>
-                        <a href="#">Nosso Propósito</a>
-                        <a href="#">Suporte</a>
-                        <a href="#">Contato</a>
-                        <a href="#">Termos de serviço</a>
-                    </div>
-                    <div class="foother-email-form">
-                        <h2>Receba nossas novidades!</h2>
-                        <input type="email" placeholder="Insira teu e-mail" id="footer-email">
-                        <input type="submit" value="Enviar" id="footer-email-btn">
-                    </div>
-                </div>
-            </div>
+
         </footer>
 
     </body>

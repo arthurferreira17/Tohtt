@@ -89,6 +89,7 @@ h2 {
 .menu a:hover {
     background-color: #4FA7D5;
     color: white;
+    transition: 0.3s ease-out;
 }
 
 .menu ul ul {
@@ -99,6 +100,7 @@ h2 {
 .menu ul li:hover ul {
     visibility: visible;
     color: white;
+    transition: 0.3s ease-out;
 }
 
 .menu ul ul li {
@@ -158,6 +160,7 @@ label[for="bt_menu"] {
     .menu ul li:hover ul {
         height: auto;
         max-height: 200px;
+        transition: 0.3s ease-out;
     }
 }
 
@@ -190,38 +193,39 @@ label[for="bt_menu"] {
 }
 
 .caixa {
-    position: relative;
-    display: block;
+    position: center;
+    display: flex;
     text-transform: uppercase;
     color: #fff;
     font-weight: bold;
-    margin-top: 10rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    content: center;
 }
 
 .caixa-forma {
     position: center;
-    width: 15rem;
-    height: 11rem;
+    width: 20rem;
+    height: 13rem;
     background: #084D6E;
     border-radius: 22px;
+    display: flex;
 }
 
 .caixa-forma2 {
     position: center;
-    width: 25rem;
-    height: 15rem;
+    width: 21rem;
+    height: auto;
     background: #084D6E;
     border-radius: 22px;
+    display: flex;
 }
 
 .caixa-forma3 {
     position: center;
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 30rem;
     background: #084D6E;
     border-radius: 22px;
+    display: flex;
 }
 
 .inputlbl {
@@ -230,6 +234,7 @@ label[for="bt_menu"] {
     color: #fff;
     font-weight: bold;
     margin-left: 0rem;
+    width: 20rem;
 }
 
 .input {
@@ -245,6 +250,13 @@ label[for="bt_menu"] {
     resize: none;
     display: inline-flex;
     margin-right: auto;
+}
+
+.conteudo {
+    display: absolute;
+    position: center;
+    padding: 5px;
+    margin-right: 10px;
 }
 
 
@@ -268,6 +280,7 @@ label[for="bt_menu"] {
 
 .btn-forma:hover {
     background-color: #4FA7D5;
+    transition: 0.3s ease-out;
 }
 
 
@@ -285,11 +298,23 @@ label[for="bt_menu"] {
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
+    text-align: justify;
+}
+
+.container-vazio {
+    width: 100vw;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 50px 1fr 1fr 100px;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .container div {
     padding: 1rem;
-    border: 1px solid #033985
+    border: 1px solid rgb(rgba(255, 0, 0, 0), green, blue);
 }
 
 .header {
@@ -312,7 +337,7 @@ label[for="bt_menu"] {
 
 .footer {
     width: 80%;
-    height: 40vh;
+    height: 30vh;
     background-color: #033985;
     color: #fff;
     display: flex;
@@ -325,6 +350,7 @@ label[for="bt_menu"] {
     display: flex;
     flex-direction: column;
     margin-right: 4rem;
+    margin-top: 0.2rem;
 }
 
 .footer-heading h2 {
@@ -354,6 +380,8 @@ label[for="bt_menu"] {
     padding-left: 0.5rem;
     font-size: 1rem;
     margin-bottom: 1rem;
+    margin-top: 0rem;
+    color: #033985;
 }
 
 #footer-email::placeholder {
@@ -398,5 +426,94 @@ label[for="bt_menu"] {
     }
     .footer-email-form {
         margin-top: 2rem;
+    }
+}
+
+
+/* Sobre nós */
+
+.containerau {
+    text-align: center;
+    background: #fff;
+}
+
+.headerau {
+    padding-top: 30px 0;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.subcontainer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.time {
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.time :hover {
+    background: #ddd;
+    border-radius: 12px;
+}
+
+.time img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.nome {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.designacao {
+    font-style: italic;
+    color: #777;
+}
+
+.sobre {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+.sociallink {
+    margin: 15px;
+}
+
+;
+.sociallink a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+
+.sociallink a:hover {
+    transform: scale(1.5);
+}
+
+.sociallink a i {
+    color: #444;
+}
+
+@media screen and(max-width: 800px) {
+    .teams {
+        max-width: 100px;
     }
 }

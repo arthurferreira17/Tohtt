@@ -26,7 +26,7 @@
 
 /*Corpo do HTML*/
 
-Body {
+body {
     margin-left: 0px;
     background: linear-gradient(116.82deg, rgba(90, 224, 144, 0.944606) 0%, rgba(117, 207, 236, 0.944606) 100%);
     position: auto;
@@ -65,6 +65,9 @@ h2 {
     height: 3.65rem;
     background: #084D6E;
     font-family: 'Arial';
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu ul {
@@ -178,12 +181,19 @@ label[for="bt_menu"] {
     grid-gap: 2.5rem;
 }
 
+
+/* formatação dos forms */
+
 .container {
+    max-width: 800px;
     width: 100%;
-    max-width: 1rem;
-    padding: 0 1.5rem;
-    margin: 0 auto;
-    position: center;
+    background: #084D6E;
+    padding: 30px 30px;
+    border-radius: 5px;
+    display: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
 .form {
@@ -515,5 +525,95 @@ label[for="bt_menu"] {
 @media screen and(max-width: 800px) {
     .teams {
         max-width: 100px;
+    }
+}
+
+
+/* teste forms*/
+
+.container .titulo {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container form .detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .detalhes .inputcaixa {
+    margin-bottom: 15px;
+    width: calc(100%/2 - 30px);
+}
+
+.detalhes .inputcaixa .detalhes {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.detalhes .inputcaixa input {
+    height: 50px;
+    width: 100%;
+    outline-color: none;
+    border-radius: 5px;
+    border: 1px solid #084D6E;
+    padding-left: 20px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all .3s ease;
+}
+
+.detalhes .inputcaixa input:focus,
+.detalhes .inputcaixa input:valid {
+    border-color: #15A39E;
+}
+
+form .inputstatus .nometarefa {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .inputcaixa .nometarefa {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .button input {
+    height: 3rem;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    letter-spacing: 1px;
+    background: #033985;
+}
+
+form .button input:hover {
+    background-color: #4FA7D5;
+    transition: .4s ease;
+}
+
+@media (max-width:700) {
+    .container {
+        max-width: 100%;
+    }
+    form .detalhes .inputcaixa {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .detalhes {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .detalhes::webkit-scrollbar {
+        width: 0;
     }
 }

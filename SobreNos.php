@@ -3,7 +3,6 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="vizu" content="width=device-width, initial-scale=1.0">
         <title>TOHT - Task Manager</title>
         <link rel="stylesheet" href="css/Style.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -16,12 +15,10 @@
         <header>
             <input type="checkbox" id="bt_menu">
             <label for="bt_menu"><span class="menuburgue"><i class="fas fa-bars"></i></span></label>
-
             <nav class="menu">
-                <a href="#" class="logo">Logo</a>
                 <ul>
                     <li><a href="Index.html" target="exibir"> Home </a></li>
-                    <li><a href="Rotina.html" target="exibir"> Rotina </a></li>
+                    <li><a href="Rotina.php" target="exibir"> Rotina </a></li>
                     <li><a href="Desempenho.php" target="exibir">Desempenho </a></li>
                     <li><a href="Estudos.html" target="exibir">Estudos </a></li>
                     <li><a href="Conquistas.php" target="exibir">Conquistas </a></li>
@@ -30,7 +27,7 @@
                         <ul>
                             <li><a href="Login.php">Login</a></li>
                             <!-- mudar para phphpphpphp -->
-                            <li> <a href="Cadastro.php">Cadastro</a>
+                            <li> <a href="cadastro.html">Cadastro</a>
                                 <!-- mudar para phphphph -->
                             </li>
                         </ul>
@@ -38,52 +35,23 @@
                 </ul>
             </nav>
         </header>
+        <h1>Manutenção</h1>
         <!-- corpo do site, o contéudo, as informações se encontram aqui -->
+        <img src="img/manutencao.jpg">
         </center>
-        <section>
-            <div class="content">
-                <div class="info">
-                    <h2>Bem-vindo<br><span>ao Toht!</span></h2>
-                    <p>Um dos principais problemas de qualquer estudante atualmente é sua organização, que por muitas vezes, leva a outros problemas como frustração ou a ausência de percepção do tempo que acaba fazendo com que a pessoa não consiga completar
-                        suas tarefas a curto e médio prazo. Toth tem como principal propósito sanar essas dificuldades que cada vez mais se agravam principalmente no momento atual onde a pandemia acabou tirando todo foco que mais do que nunca todos precisavam.</p>
-                    <a href="#descubra" class="info-btn">Mais informações</a>
-                </div>
+        <div class="container-texto">
+            <div class="header">
+                <h1> Conheça a Toht! Nossos integrantes e nosso propósito.</h1>
             </div>
-        </section>
-        <div class="content">
-            <div class="info">
-                <h2 id="descubra">
-                    Afinal, o que é o toht?
-                </h2>
-                <p>Toht é uma aplicação primariamente focada em gestão de tempo para pessoas no meio acadêmico disponibilizando uma ferramenta de rotina que disponibiliza um local para que o estudante consiga se organizar e manter em ordem de acordo com
-                    a data de suas tarefas. A partir disso buscamos te incentivar a continuar mantendo um bom progresso em relação a sua rotina com dois pequenos fatores, sendo o primeiro um sistema de conquistas, focado apenas no seu desenvolvimento
-                    pessoal pois não queremos que você se sinta insuficiente em relação as suas consquistas e que desenvolva no seu próprio tempo, o segundo fator é uma página de desempenho mostrando seus dados e consequentemente a sua evolução, assim
-                    saberá exatamente como está progredindo de acordo com seus planos.
-
-                </p>
+            <div class="content-large">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, error facere? Nulla iste dolorem error quibusdam rem aliquid quaerat quam provident nemo deleniti pariatur modi, porro voluptatem totam distinctio ducimus. Blanditiis quod,
+                    asperiores aut aspernatur suscipit accusantium nostrum sapiente iure necessitatibus explicabo reiciendis doloribus animi. Dolor perspiciatis illo omnis nisi.</h2>
+            </div>
+            <div class="content-large">
+                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, ipsa culpa dolorem, laudantium harum similique excepturi soluta quae, inventore laboriosam ipsum quisquam sequi veritatis consequatur sint. Veritatis id repellat cumque?
+                    luptatem veniam magnam dolor provident ex quia numquam necessitatibus. Soluta ut voluptatum dolorem repellendus?</h2>
             </div>
         </div>
-        <div class="content">
-            <div class="info">
-                <h2 id="busca">
-                    O que buscamos?
-                </h2>
-                <p>Buscamos ajudar jovens que tem como objetivo conseguirem organizar suas vidas para que consigam extrair 100% do seu tempo livre e disponilizar diversos métodos de ensino e organização de tempo para colaborar numa nova geração mais organizada
-                    e consequentemente com mais tempo livre.
-                </p>
-            </div>
-        </div>
-        <div class="content">
-            <div class="info">
-                <h2 id="busca">
-                    Te convencemos?
-                </h2>
-                <p>Se nossa proposta te interessou, considere a se unir a gente para que possamos trabalhar juntos para conseguirmos evoluir, você utilizando de nossa ferramenta e evolindo e nós ouvindo seu feedback e buscando em melhorar o site ao máximo.
-                </p>
-                <a href="Cadastro.html" class="info-btn">Junte-se a gente</a>
-            </div>
-        </div>
-        <!-- Sobre a equipe -->
         <div class="containerau">
             <div class="headerau">
                 <h1>Nossa equipe</h1>
@@ -132,7 +100,7 @@
                 </div>
                 <div class="time ">
 
-                    <img src="img/keller.png" alt=" ">
+                    <img src="img/keller2.jpeg " alt=" ">
                     <div class="nome ">Lucas Keller</div>
                     <div class="designacao ">Designer do projeto e responsável pela monografia</div>
                     <div class="sobre ">
@@ -162,7 +130,7 @@
                         <a href="#"><i class="fab fa-twitter"></i > Twitter</a>
                         <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
                         <a href="#"><i class="fab fa-discord"></i> Discord</a>
-                        <a href="https://www.youtube.com/watch?v=4Wyne-yGVxM"><i class="fab fa-reddit"></i> Reddit</a>
+                        <a href="#"><i class="fab fa-reddit"></i> Reddit</a>
                     </div>
                     <div class="footer-heading footer-2">
                         <h2>Sobre nós</h2>
@@ -171,8 +139,7 @@
                         <a href="#">Contato</a>
                         <a href="#">Termos de serviço</a>
                     </div>
-
-                    <div class="footer-email-form">
+                    <div class="foother-email-form">
                         <h2>Receba nossas novidades!</h2>
                         <input type="email" placeholder="Insira teu e-mail" id="footer-email">
                         <input type="submit" value="Enviar" id="footer-email-btn">
@@ -180,7 +147,6 @@
                 </div>
             </div>
         </footer>
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
         <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
     </body>
 

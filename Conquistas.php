@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="vizu" content="width=device-width, initial-scale=1.0">
         <title>TOHT - Task Manager</title>
         <link rel="stylesheet" href="css/Style.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -15,7 +16,9 @@
         <header>
             <input type="checkbox" id="bt_menu">
             <label for="bt_menu"><span class="menuburgue"><i class="fas fa-bars"></i></span></label>
+
             <nav class="menu">
+                <a href="#" class="logo">Logo</a>
                 <ul>
                     <li><a href="Index.html" target="exibir"> Home </a></li>
                     <li><a href="Rotina.php" target="exibir"> Rotina </a></li>
@@ -27,7 +30,7 @@
                         <ul>
                             <li><a href="Login.php">Login</a></li>
                             <!-- mudar para phphpphpphp -->
-                            <li> <a href="cadastro.html">Cadastro</a>
+                            <li> <a href="Cadastro.php">Cadastro</a>
                                 <!-- mudar para phphphph -->
                             </li>
                         </ul>
@@ -36,55 +39,24 @@
             </nav>
         </header>
         <!-- corpo do site, o contéudo, as informações se encontram aqui -->
+        </center>
         <section>
             <div class="content">
                 <div class="info">
-                    <h2>Métodos de<br><span>estudo famosos</span></h2>
-                    <p>Nossa equipe juntou a maior quantidade de métodos científicos de estudo e gestão de tempo para que você consiga escolher qual escolher ou aplicar na sua rotina e verificar como eles influênciam sua vida acadêmica.</p>
-                    <div class="estudo-icon">
-                        <a href="#pomodoro"><i class="fas fa-stopwatch"></i> Pomodoro</a>
-                        <a href="#robinson"><i class="fas fa-book"></i></i> Robinson</a>
-                        <a href="#fichamento"><i class="fas fa-file"></i> Fichamento</a>
-                        <a href="#intercalado"><i class="fas fa-random"></i> Intercalado</a>
-                    </div>
+                    <h2>Suas conquistas!</h2>
+                    <p>Aqui você poderá verificar metas estabelecidas pela nossa equipe baseadas inteiramente no seu desempenho! Não precisa esquentar a cabeça, não há pressão nesta aba, é apenas uma maneira de eternizar o seu progresso de acordo com o seu ritmo de produção.</p>
+                    <a href="#descubra" class="info-btn">PROGRESSO</a>
                 </div>
             </div>
         </section>
         <div class="content">
             <div class="info">
-                <h2 id="pomodoro">
-                    Método pomodoro
+                <h2 id="descubra">
+                    Tabela de conquistas + tabela + for 
                 </h2>
-                <p>Este método de gestão de tempo consiste em trabalhar de maneira ineterrupta em uma tarefa por 25 minutoscontinuos e após o fim deste período descansar por 5 minutos e anotar o progresso da tarefa realizada, repetindo o processo por duas
-                    horas no total, onde finalmente poderá ter um tempo maior de descanso para refrescar as ideias.<br>Para verificar se você está se saindo bem comece estimando o tempo que você acreditaria que iria tomar realizando a tarefa e compare
-                    com o seu progresso utlizando a gestão pomodoro.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempora sit nemo libero culpa blanditiis, molestias ab, harum repellendus eum laborum quam a praesentium nam distinctio qui, quae nostrum ea!
 
-            </div>
-        </div>
-        <div class="content">
-            <div class="info">
-                <h2 id="robinson">
-                    Método EPL2R (Robinson)
-                </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nisi eligendi architecto hic deserunt. Expedita doloribus fugiat recusandae laudantium at, vitae id vero dolorem ducimus fugit voluptatem non labore asperiores neque, provident
-                    nobis veniam iste ex sit dolores magnam maxime velit quidem hic! Doloribus illum, corporis magnam officiis quae aperiam!</p>
-            </div>
-        </div>
-        <div class="content">
-            <div class="info">
-                <h2 id="fichamento">
-                    Método de fichamento
-                </h2>
-                <p>Nesse método de estudo é focado em fixação de contéudo, como o nome já implica um "fichamento" é praticamente um resumo separado em fichas e tópicos para facilitar o entendimento do conteúdo para assim desenrolar suas sessões de estudos.</p>
-            </div>
-        </div>
-        <div class="content">
-            <div class="info">
-                <h2 id="intercalado">
-                    Método intercalado
-                </h2>
-                <p>Nesse meio de estudo o objetivo é evitar confusão na hora de se organizar na hora dos estudos, em vez de tomar certas partes do seu periodo de estudo para cada matéria, a ideia é pegar um dia inteiro para estudar uma matéria isolada fazendo
-                    as anotações separadas assim maximizando a maior quantidade de informações com que você consegue absorver dedicando mais tempo para um tópico em específico.</p>
+                </p>
             </div>
         </div>
 
@@ -98,7 +70,7 @@
                         <a href="#"><i class="fab fa-twitter"></i > Twitter</a>
                         <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
                         <a href="#"><i class="fab fa-discord"></i> Discord</a>
-                        <a href="#"><i class="fab fa-reddit"></i> Reddit</a>
+                        <a href="https://www.youtube.com/watch?v=4Wyne-yGVxM"><i class="fab fa-reddit"></i> Reddit</a>
                     </div>
                     <div class="footer-heading footer-2">
                         <h2>Sobre nós</h2>
@@ -107,7 +79,8 @@
                         <a href="#">Contato</a>
                         <a href="#">Termos de serviço</a>
                     </div>
-                    <div class="foother-email-form">
+
+                    <div class="footer-email-form">
                         <h2>Receba nossas novidades!</h2>
                         <input type="email" placeholder="Insira teu e-mail" id="footer-email">
                         <input type="submit" value="Enviar" id="footer-email-btn">
@@ -115,6 +88,7 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
         <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
     </body>
 

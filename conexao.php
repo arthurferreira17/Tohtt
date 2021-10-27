@@ -1,8 +1,11 @@
 <?php
 
+session_start();
+
 $usuario = "root";
 $senha = "";
 $banco = "toht";
+global $conexao;
 
 try 
 {

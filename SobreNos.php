@@ -25,10 +25,8 @@
                     <li>
                         <a href="#" target="exibir"><i class="fas fa-user"></i> </a>
                         <ul>
-                            <li><a href="Login.php">Login</a></li>
-                            <!-- mudar para phphpphpphp -->
+                            <li><a href="Login.html">Login</a></li>
                             <li> <a href="cadastro.html">Cadastro</a>
-                                <!-- mudar para phphphph -->
                             </li>
                         </ul>
                     </li>

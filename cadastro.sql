@@ -18,3 +18,5 @@ create table Rotina (
     StatusRotina varchar (20) not null,
     primary key(ID_Rotina)
 )default charset utf8;
+
+select * from Rotina;

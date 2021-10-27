@@ -27,9 +27,7 @@
                         <a href="#" target="exibir"><i class="fas fa-user"></i> </a>
                         <ul>
                             <li><a href="Login.php">Login</a></li>
-                            <!-- mudar para html -->
                             <li> <a href="cadastro.html">Cadastro</a>
-                                <!-- mudar para html -->
                             </li>
                         </ul>
                     </li>

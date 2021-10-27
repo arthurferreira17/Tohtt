@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>TOHTT - Task Manager</title>
         <link rel="stylesheet" href="css/Style.css" type="text/css">
+        <link rel="icon" type="image/png" href="/img/logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="./slick/slick.css">
         <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
@@ -18,46 +19,54 @@
             <nav class="menu">
                 <ul>
                     <li><a href="Index.html" target="exibir"> Home </a></li>
-                    <li><a href="#" target="exibir"> Rotina </a></li>
-                    <li><a href="#" target="exibir">Desempenho </a></li>
-                    <li><a href="#" target="exibir">Estudos </a>
+                    <li><a href="Rotina.php" target="exibir"> Rotina </a></li>
+                    <li><a href="Desempenho.php" target="exibir">Desempenho </a></li>
+                    <li><a href="Estudos.html" target="exibir">Estudos </a></li>
+                    <li><a href="Conquistas.php" target="exibir">Conquistas </a></li>
+                    <li>
+                        <a href="#" target="exibir"><i class="fas fa-user"></i> </a>
                         <ul>
-                            <li><a href="#">Métodos</a></li>
-                            <li> <a href="#">Como se aprimorar</a>
+                            <li><a href="Login.php">Login</a></li>
+                            <!-- mudar para phphpphpphp -->
+                            <li> <a href="cadastro.html">Cadastro</a>
+                                <!-- mudar para phphphph -->
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#" target="exibir">Notebook </a></li>
-                    <li><a href="#" target="exibir"> Quem somos nós</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="container">
-            <center>
-                <div class="caixa-forma2">
-                    <div class="caixa">
-                        <forms action="#" class="forms">
-                            <div class="conteudo">
-                                <label for="user" class="inputlbl">Usuário</label>
-                                <input type="text" class="input " id="user" placeholder="...">
-                            </div>
-                            <div class="conteudo">
-                                <label for="senha" class="inputlbl">Senha</label>
-                                <input type="password" class="input " id="senha" placeholder="...">
-                            </div>
-                            <br>
+        <center>
+            <div class="container-vazio"></div>
+            <div class="caixa-forma2">
+                <div class="caixa">
+                    <form id="form" action="teste2.php" method="POST" class="forms">
+                        <div class="conteudo">
+                            <label for="user" class="inputlbl">Usuário</label>
+                            <input type="text" class="input " id="user" name="user" placeholder="...">
+                        </div>
+                        <div class="conteudo">
+                            <label for="senha" class="inputlbl">Senha</label>
+                            <input type="password" class="input " id="senha" name="senha" placeholder="...">
+                        </div>
+                        <br>
+                        <div class="conteudo">
                             <input type="checkbox" class="checkbox" id="remember"></input>
-                            <label for="lembrar" class="">Manter conectado</label>
-                            <p></p>
-                            <a href="#" class="btn btn-forma">Login</a>
-                            <a href="#" class="btn btn-forma">Cadastrar</a>
-                            <br>
-                            <a href="RecLogin.html" class="btn esqueceu">Esqueceu a senha?</a>
+                            <label for="lembrar" class="manter">Manter conectado</label>
+
+                        </div>
+                        <br>
+                        <button class="btn btn-forma" type="submit">Login</button>
+                        <br>
+                        <a href="Cadastro.html" class="btn btn-forma">Cadastrar</a>
+                        <br>
+                        <br>
+                        <a href="RecLogin.php" class="btn esqueceu">Esqueceu a senha?</a>
                         </forms>
-                    </div>
                 </div>
-            </center>
-        </section>
+            </div>
+            <div class="container-vazio"></div>
+        </center>
         </div>
         <!-- FOOTER AQUI SE ENCONTRA O FOOTER DO SITE + REDES SOCIAIS + CONTATO + COPYRIGHT -->
         <footer>
@@ -86,7 +95,7 @@
                 </div>
             </div>
         </footer>
-
+        <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
     </body>
 
     </html>

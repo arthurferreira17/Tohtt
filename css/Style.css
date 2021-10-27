@@ -1,8 +1,9 @@
-/*Import googlet*/
+/*Import google*/
 
 @import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /*Variáveis*/
 
@@ -654,6 +655,7 @@ form .button input {
     letter-spacing: 2px;
     letter-spacing: 1px;
     background: #033985;
+    font-family: 'Barlow Condensed', 'Fire Sans';
 }
 
 form .button input:hover {
@@ -697,7 +699,7 @@ form .button input:hover {
 }
 
 
-/* Handle on hover */
+/* Scrollbar:hover */
 
  ::-webkit-scrollbar-thumb:hover {
     background: #0D4E85;

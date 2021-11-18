@@ -1,0 +1,163 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>TOHTT - Task Manager</title>
+        <link rel="stylesheet" href="css/Style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+        <script src="js/jquery-1.9.0.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <!-- HEADER AQUI SE ENCONTRA O MENU DE NAVEGAÇÃO -->
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <i class='bx bxs-pen'></i>
+                    <div class="logo_name">Toht</div>
+                </div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Pesquise...">
+                    </a>
+                    <span class="tooltip"> Pesquisa</span>
+                </li>
+                <li>
+                    <a href="Index.html"><i class='bx bx-home-alt' ></i>
+                    <span class="links_name">Home</span></a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="Rotinax.php"><i class='bx bx-calendar' ></i>
+                    <span class="links_name">Rotina</span></a>
+                    <span class="tooltip">Crie suas rotinas</span>
+                </li>
+                <li>
+                    <a href="Desempenho.php"><i class='bx bxs-bar-chart-alt-2' ></i>
+                    <span class="links_name">Desempenho</span></a>
+                    <span class="tooltip">Seu desempenho</span>
+                </li>
+                <li>
+                    <a href="Conquistas.php"><i class='bx bxs-medal' ></i>
+                    <span class="links_name">Conquistas</span></a>
+                    <span class="tooltip">Veja suas conquistas</span>
+                </li>
+                <li>
+                    <a href="Estudos.html"><i class='bx bxs-book-content' ></i>
+                    <span class="links_name">Estudos</span></a>
+                    <span class="tooltip">Estudos</span>
+                </li>
+                <li>
+                    <a href="Login.html"><i class='bx bx-user-circle' ></i>
+                    <span class="links_name">Login</span></a>
+                    <span class="tooltip">Faça login/cadastro</span>
+                </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="img/ricardo.png" alt="">
+                        <div class="name_job">
+                            <div class="name">Ricardo</div>
+                            <div class="job">Estudante</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </div>
+        </div>
+        <center>
+            <div class="container-vazio"></div>
+            <div class="home_content">
+                <div class="caixa-forma3">
+                    <div class="caixa">
+                        <form id="form" action="cadastro.php" method="POST" class="forms">
+                            <div class="conteudo">
+                                <label for="nome" class="inputlbl">Nome</label>
+                                <input type="text" class="input " id="nome" placeholder="..." name="nome" />
+                            </div>
+                            <div class="conteudo">
+                                <label for="username" class="inputlbl">Nome de usuário</label>
+                                <input type="text" class="input " id="username" placeholder="..." name="username" />
+                            </div>
+                            <div class="conteudo">
+                                <label for="email" class="inputlbl">E-mail</label>
+                                <input type="e-mail" class="input " id="email" placeholder="..." name="email" />
+                            </div>
+                            <div class="conteudo">
+                                <label for="datanasc" class="inputlbl">Data de nascimento</label>
+                                <input type="date" class="input " id="datanasc" placeholder="..." name="datanasc" />
+                            </div>
+                            <div class="conteudo">
+                                <label for="senha" class="inputlbl">Senha</label>
+                                <input type="password" class="input " id="senha" placeholder="..." name="senha" />
+                            </div>
+                            <div class="conteudo">
+                                <label for="confirmsenha" class="inputlbl">Confirme a sua senha</label>
+                                <input type="password" class="input " id="confirmsenha" placeholder="..." name="confirmsenha" />
+                            </div>
+                            <br>
+                            <input type="submit" id="cadastrar" value="cadastrar" class="btn btn-forma">
+                            <br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container-vazio "></div>
+        </center>
+
+        <!-- FOOTER AQUI SE ENCONTRA O FOOTER DO SITE + REDES SOCIAIS + CONTATO + COPYRIGHT -->
+        <footer>
+            <div class="footer-container ">
+                <div class="footer ">
+                    <div class="footer-heading footer-1 ">
+                        <h2>Nossas redes sociais</h2>
+                        <a href="# "><i class="fab fa-facebook "></i> Facebook</a>
+                        <a href="# "><i class="fab fa-twitter "></i> Twitter</a>
+                        <a href="# "><i class="fab fa-instagram "></i> Instagram</a>
+                        <a href="# "><i class="fab fa-discord "></i> Discord</a>
+                        <a href="# "><i class="fab fa-reddit "></i> Reddit</a>
+                    </div>
+                    <div class="footer-heading footer-2 ">
+                        <h2>Sobre nós</h2>
+                        <a href="# ">Nosso Propósito</a>
+                        <a href="# ">Suporte</a>
+                        <a href="# ">Contato</a>
+                        <a href="# ">Termos de serviço</a>
+                    </div>
+                    <div class="foother-email-form">
+                        <h2>Receba nossas novidades!</h2>
+                        <input type="email" placeholder="Insira teu e-mail" id="footer-email">
+                        <input type="submit" value="Enviar" id="footer-email-btn">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js "></script>
+        <script src="js/jquery-1.9.0.min.js "></script>
+        <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+            let searchBtn = document.querySelector(".bx-search");
+            btn.onclick = function() {
+                sidebar.classList.toggle("active");
+            }
+            searchBtn.onclick = function() {
+                searchBtn.classList.toggle("active");
+            }
+        </script>
+
+    </body>
+
+    </html>

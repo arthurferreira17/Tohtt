@@ -1,0 +1,255 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="./img/logo.png" type="image/png">
+        <meta name="vizu" content="width=device-width, initial-scale=1.0">
+        <title>TOHT - Task Manager</title>
+        <link rel="stylesheet" href="css/Style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <!-- HEADER AQUI SE ENCONTRA O MENU DE NAVEGAÇÃO -->
+
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <i class='bx bxs-pen'></i>
+                    <div class="logo_name">Toht</div>
+                </div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Pesquise...">
+                    </a>
+                    <span class="tooltip"> Pesquisa</span>
+                </li>
+                <li>
+                    <a href="Index.html"><i class='bx bx-home-alt' ></i>
+                    <span class="links_name">Home</span></a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="Rotinax.php"><i class='bx bx-calendar' ></i>
+                    <span class="links_name">Rotina</span></a>
+                    <span class="tooltip">Crie suas rotinas</span>
+                </li>
+                <li>
+                    <a href="Desempenho.php"><i class='bx bxs-bar-chart-alt-2' ></i>
+                    <span class="links_name">Desempenho</span></a>
+                    <span class="tooltip">Seu desempenho</span>
+                </li>
+                <li>
+                    <a href="Conquistas.php"><i class='bx bxs-medal' ></i>
+                    <span class="links_name">Conquistas</span></a>
+                    <span class="tooltip">Veja suas conquistas</span>
+                </li>
+                <li>
+                    <a href="Estudos.html"><i class='bx bxs-book-content' ></i>
+                    <span class="links_name">Estudos</span></a>
+                    <span class="tooltip">Estudos</span>
+                </li>
+                <li>
+                    <a href="Login.html"><i class='bx bx-user-circle' ></i>
+                    <span class="links_name">Login</span></a>
+                    <span class="tooltip">Faça login/cadastro</span>
+                </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="img/ricardo.png" alt="">
+                        <div class="name_job">
+                            <div class="name">Ricardo</div>
+                            <div class="job">Estudante</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- corpo do site, o contéudo, as informações se encontram aqui -->
+
+        <div class="home_content">
+            <section>
+                <div class="content">
+                    <div class="info">
+                        <h2>Bem-vindo<br><span>ao Toht!</span></h2>
+                        <p>Um dos principais problemas de qualquer estudante atualmente é sua organização, que por muitas vezes, leva a outros problemas como frustração ou a ausência de percepção do tempo que acaba fazendo com que a pessoa não consiga completar
+                            suas tarefas a curto e médio prazo. Toth tem como principal propósito sanar essas dificuldades que cada vez mais se agravam principalmente no momento atual onde a pandemia acabou tirando todo foco que mais do que nunca todos
+                            precisavam.
+                        </p>
+                        <a href="#descubra" class="info-btn">Mais informações</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-vazio"></div>
+        <div class="home_content">
+            <div class="content">
+                <div class="info">
+                    <h2 id="descubra">
+                        Afinal, o que é o toht?
+                    </h2>
+                    <p>Toht é uma aplicação primariamente focada em gestão de tempo para pessoas no meio acadêmico disponibilizando uma ferramenta de rotina que disponibiliza um local para que o estudante consiga se organizar e manter em ordem de acordo
+                        com a data de suas tarefas. A partir disso buscamos te incentivar a continuar mantendo um bom progresso em relação a sua rotina com dois pequenos fatores, sendo o primeiro um sistema de conquistas, focado apenas no seu desenvolvimento
+                        pessoal pois não queremos que você se sinta insuficiente em relação as suas consquistas e que desenvolva no seu próprio tempo, o segundo fator é uma página de desempenho mostrando seus dados e consequentemente a sua evolução, assim
+                        saberá exatamente como está progredindo de acordo com seus planos.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="home_content">
+            <div class="content">
+                <div class="info">
+                    <h2 id="busca">
+                        O que buscamos?
+                    </h2>
+                    <p>Buscamos ajudar jovens que tem como objetivo conseguirem organizar suas vidas para que consigam extrair 100% do seu tempo livre e disponilizar diversos métodos de ensino e organização de tempo para colaborar numa nova geração mais
+                        organizada e consequentemente com mais tempo livre.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="home_content">
+            <div class="content">
+                <div class="info">
+                    <h2 id="busca">
+                        Te convencemos?
+                    </h2>
+                    <p>Se nossa proposta te interessou, considere a se unir a gente para que possamos trabalhar juntos para conseguirmos evoluir, você utilizando de nossa ferramenta e evolindo e nós ouvindo seu feedback e buscando em melhorar o site ao máximo.
+                    </p>
+                    <a href="Cadastro.html" class="info-btn">Junte-se a gente</a>
+                </div>
+            </div>
+        </div>
+        <!-- Sobre a equipe -->
+        <div class="home_content">
+            <div class="containerau">
+                <div class="headerau">
+                    <h1>Nossa equipe</h1>
+                </div>
+                <div class="subcontainer">
+                    <div class="time">
+
+                        <img src="img/arthur.jpeg" alt="Inimigo do riso">
+                        <div class="nome">Arthur Ferreira</div>
+                        <div class="designacao">Programador Full-Stack do projeto</div>
+                        <div class="sobre">
+                            Responsável pela estrutura geral do projeto, implantação do comunismo em Diadema e perpetuador da ordem 7775 que encerrou de vez a tirânia de XiaoMinas.
+                        </div>
+                        <div class="sociallink"> <a href="#"><i class="fab fa-twitter"></i ></a></div>
+                    </div>
+                    <div class="time">
+
+                        <img src="img/alberani.jpeg" alt="Autor da tese dos ratos">
+                        <div class="nome">Pedro alberani</div>
+                        <div class="designacao">Programador Front-End do projeto</div>
+                        <div class="sobre">
+                            Responsável pela estrutura visual do site implementando as ideias da equipe de design, sobrevivente da guerra de MinasII, primeiro a escrever as teses dos ratos de info e princípios de minas, desaparecido desde declarada a morte de XiaoMinas.
+                        </div>
+                        <div class="sociallink"> <a href="#"><i class="fab fa-twitter"></i ></a></div>
+                    </div>
+                    <div class="time">
+
+                        <img src="img/ricardo.jpeg" alt="Judeu ">
+                        <div class="nome ">Ricardo Martins</div>
+                        <div class="designacao ">Programador Back-end
+                            <Back-end></Back-end> do projeto</div>
+                        <div class="sobre ">
+                            Responsável pela estrutura funcional do back-end do site, preso após ser declarado responsável pelo desaparecimento de Lira (não confundir com Lucas Lira) e Jake(Filho do Pyionh, não confundir com o cachorro), solto após o desaparecimento de Beras.
+                        </div>
+                        <div class="sociallink "> <a href="# "><i class="fab fa-twitter "></i ></a></div>
+                    </div>
+                    <div class="time ">
+
+                        <img src="img/furtado.jpeg " alt="Bolsonaro 2 ">
+                        <div class="nome ">Felipe Furtado</div>
+                        <div class="designacao ">Analista de sistemas do projeto e controle de qualidade</div>
+                        <div class="sobre ">
+                            Responsável de corrigir erros de lógica no projeto para evitar o surgimento de problemas e de que tudo funcione em harmonia, primeiro general do escalão AM(Anti-Minas) e desafiou Nelson com um batalhão de 100mil homens, só ele retornou com vida.
+                        </div>
+                        <div class="sociallink "> <a href="# "><i class="fab fa-twitter "></i ></a></div>
+                    </div>
+                    <div class="time ">
+
+                        <img src="img/keller.jpeg" alt="O mixas ">
+                        <div class="nome ">Lucas Keller</div>
+                        <div class="designacao ">Designer do projeto e responsável pela monografia</div>
+                        <div class="sobre ">
+                            Responsável pela identidade visual do projeto e pela logo, após meses fermentando o pitch perfeito, foi interrompido por um processo jurídico de Travis Scott (secretamente Pinas) de U$8 milhões, após acusações removidas resolvou se unir a revolução como
+                            bardo.
+                        </div>
+                        <div class="sociallink "> <a href="# "><i class="fab fa-twitter "></i ></a></div>
+                    </div>
+                    <div class="time ">
+
+                        <img src="img/geovanni.jpeg " alt="Maior santista do pais">
+                        <div class="nome ">Geovanni Bento</div>
+                        <div class="designacao ">Designer do projeto e responsável pela monografia</div>
+                        <div class="sobre ">
+                            Responsável pela identidade visual do projeto e pela logo, após ter sua amada presa numa torre de obsidiana por 2 longos anos por Pinas, o agente se uniu com uma entidade de outro mundo [SCP: PEIXE🐟🐠🐡🦈], assim se tornando meio homem e meio santos
+                            se unindo a revolução.
+                        </div>
+                        <div class="sociallink "> <a href="# "><i class="fab fa-twitter "></i ></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER AQUI SE ENCONTRA LOGO + REDES SOCIAIS + CONTATO + COPYRIGHT -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer">
+                    <div class="footer-heading footer-1">
+                        <h2>Nossas redes sociais</h2>
+                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-twitter"></i > Twitter</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                        <a href="https://www.youtube.com/watch?v=4Wyne-yGVxM"><i class="fab fa-reddit"></i> Reddit</a>
+                    </div>
+                    <div class="footer-heading footer-2">
+                        <h2>Sobre nós</h2>
+                        <a href="#">Nosso Propósito</a>
+                        <a href="#">Suporte</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Termos de serviço</a>
+                    </div>
+
+                    <div class="footer-email-form">
+                        <h2>Receba nossas novidades!</h2>
+                        <input type="email" placeholder="Insira teu e-mail" id="footer-email">
+                        <input type="submit" value="Enviar" id="footer-email-btn">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+        <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
+
+        <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+            let searchBtn = document.querySelector(".bx-search");
+            btn.onclick = function() {
+                sidebar.classList.toggle("active");
+            }
+            searchBtn.onclick = function() {
+                searchBtn.classList.toggle("active");
+            }
+        </script>
+
+    </body>
+
+    </html>

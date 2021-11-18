@@ -1,0 +1,201 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>TOHT - Task Manager</title>
+        <link rel="stylesheet" href="css/Style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <!-- HEADER AQUI SE ENCONTRA O MENU DE NAVEGAÇÃO -->
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <i class='bx bxs-pen'></i>
+                    <div class="logo_name">Toht</div>
+                </div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Pesquise...">
+                    </a>
+                    <span class="tooltip"> Pesquisa</span>
+                </li>
+                <li>
+                    <a href="Index.html"><i class='bx bx-home-alt' ></i>
+                    <span class="links_name">Home</span></a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="Rotinax.php"><i class='bx bx-calendar' ></i>
+                    <span class="links_name">Rotina</span></a>
+                    <span class="tooltip">Crie suas rotinas</span>
+                </li>
+                <li>
+                    <a href="Desempenho.php"><i class='bx bxs-bar-chart-alt-2' ></i>
+                    <span class="links_name">Desempenho</span></a>
+                    <span class="tooltip">Seu desempenho</span>
+                </li>
+                <li>
+                    <a href="Conquistas.php"><i class='bx bxs-medal' ></i>
+                    <span class="links_name">Conquistas</span></a>
+                    <span class="tooltip">Veja suas conquistas</span>
+                </li>
+                <li>
+                    <a href="Estudos.html"><i class='bx bxs-book-content' ></i>
+                    <span class="links_name">Estudos</span></a>
+                    <span class="tooltip">Estudos</span>
+                </li>
+                <li>
+                    <a href="Login.html"><i class='bx bx-user-circle' ></i>
+                    <span class="links_name">Login</span></a>
+                    <span class="tooltip">Faça login/cadastro</span>
+                </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="img/ricardo.png" alt="">
+                        <div class="name_job">
+                            <div class="name">Ricardo</div>
+                            <div class="job">Estudante</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </div>
+        </div>
+        <!-- corpo do site, o contéudo, as informações se encontram aqui -->
+        <div class="home_content">
+            <section>
+                <div class="content">
+                    <div class="info">
+                        <h2>Métodos de<br><span>estudo famosos</span></h2>
+                        <p>Nossa equipe juntou a maior quantidade de métodos científicos de estudo e gestão de tempo para que você consiga escolher qual escolher ou aplicar na sua rotina e verificar como eles influênciam sua vida acadêmica.</p>
+                        <div class="estudo-icon">
+                            <a href="#pomodoro"><i class="fas fa-stopwatch"></i> Pomodoro</a>
+                            <a href="#robinson"><i class="fas fa-book"></i></i> Robinson</a>
+                            <a href="#fichamento"><i class="fas fa-file"></i> Fichamento</a>
+                            <a href="#intercalado"><i class="fas fa-random"></i> Intercalado</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="home_content">
+            <div class="content">
+                <div class="info">
+                    <h2 id="pomodoro">
+                        Método pomodoro
+                    </h2>
+                    <p>Este método de gestão de tempo consiste em trabalhar de maneira ineterrupta em uma tarefa por 25 minutos continuos e após o fim deste período descansar por 5 minutos e anotar o progresso da tarefa realizada, repetindo o processo por
+                        duas horas no total, onde finalmente poderá ter um tempo maior de descanso para refrescar as ideias.<br>Para verificar se você está se saindo bem comece estimando o tempo que você acreditaria que iria tomar realizando a tarefa
+                        e compare com o seu progresso utlizando a gestão pomodoro.</p>
+                    <iframe src="https://www.youtube.com/embed/hfxfJ7Qa4sg?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0" style="width:100%;height:600px;" title="video"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="home_content">
+            <div class="content">
+                <div class="info">
+                    <h2 id="robinson">
+                        Método PQL2R[SQ3R](Robinson)
+                    </h2>
+                    <p>Este método de estudo é utilizado para fixação de contéudo, se encontra com dificuldades para estudar ou até mesmo lembrar do que foi estudado? Se sim, este método foi feito sob medida para você e ele é bem simples, basta seguir 5
+                        passos diretos e esperar os resultados</p>
+                    <p>
+                        1. Pesquisa: Breve lida no material focando em prestar atenção nos títulos, subtítulos e afins para obter o máximo de contexto possivel sobre o tema.
+                    </p>
+                    <p>
+                        2. Questionar: Se questione sobre o material abordado, de preferência se baseando inteiramente em items analisados na fase interior, estimulando o cérebro a se aprofundar e conseguir extrair o máximo de questionamentos sobre o material.
+                    </p>
+                    <p>
+                        3. Ler: Agora se inicia uma leitura aprofundada sobre o material com o intuito de resolver as questões levantadas no método anterior eque mantenha sua leitura da mnaneira mais meticulosa possível, sublinhando frases importantes, fazendo anotações e entre
+                        outros.
+                    </p>
+                    <p>
+                        4. Recitar: Recita para si mesmo (de forma vocal ou não) para que consiga entender de maneira mais dinâmica seus estudos e para a memorização do que foi estudado.
+                    </p>
+                    <p>
+                        5. Revisão: Momento final onde, como o nome indica, todas as anotações físicas deverão ser revisadas com o objetivo de facilitar em uma conclusão final sobre todo o processo de aprendizado.
+                    </p>
+                    <iframe src="https://www.youtube.com/embed/zzRmBUi9EKg?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0" style="width:100%;height:600px;" title="video"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="home_content">
+            <div class="content">
+                <div class="info">
+                    <h2 id="fichamento">
+                        Método de fichamento
+                    </h2>
+                    <p>Nesse método de estudo é focado em fixação de contéudo, como o nome já implica um "fichamento" é praticamente um resumo separado em fichas e tópicos para facilitar o entendimento do conteúdo para assim desenrolar suas sessões de estudos.</p>
+                    <iframe src="https://www.youtube.com/embed/M5O-Ttj6iEs?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd720" style="width:100%;height:600px;" title="video"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="home_content">
+            <div class="content">
+                <div class="info">
+                    <h2 id="intercalado">
+                        Método intercalado
+                    </h2>
+                    <p>Nesse meio de estudo o objetivo é evitar confusão na hora de se organizar na hora dos estudos, em vez de tomar certas partes do seu periodo de estudo para cada matéria, a ideia é pegar um dia inteiro para estudar uma matéria isolada
+                        fazendo as anotações separadas assim maximizando a maior quantidade de informações com que você consegue absorver dedicando mais tempo para um tópico em específico.</p>
+                    <iframe src="https://www.youtube.com/embed/aoJ27v_1jMY?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd720" style="width:100%;height:600px;" title="video"></iframe>
+                </div>
+            </div>
+
+        </div>
+        <!-- FOOTER AQUI SE ENCONTRA O FOOTER DO SITE + REDES SOCIAIS + CONTATO + COPYRIGHT -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer">
+                    <div class="footer-heading footer-1">
+                        <h2>Nossas redes sociais</h2>
+                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-twitter"></i > Twitter</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                        <a href="#"><i class="fab fa-reddit"></i> Reddit</a>
+                    </div>
+                    <div class="footer-heading footer-2">
+                        <h2>Sobre nós</h2>
+                        <a href="#">Nosso Propósito</a>
+                        <a href="#">Suporte</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Termos de serviço</a>
+                    </div>
+                    <div class="foother-email-form">
+                        <h2>Receba nossas novidades!</h2>
+                        <input type="email" placeholder="Insira teu e-mail" id="footer-email">
+                        <input type="submit" value="Enviar" id="footer-email-btn">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js"></script>
+
+        <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+            let searchBtn = document.querySelector(".bx-search");
+            btn.onclick = function() {
+                sidebar.classList.toggle("active");
+            }
+            searchBtn.onclick = function() {
+                searchBtn.classList.toggle("active");
+            }
+        </script>
+    </body>
+
+    </html>
